@@ -1,4 +1,10 @@
 class Solution:
+    # the idea is that each operator seperates the string as the left part and right part.
+    # Each part can be regard as a subproblem of the original question. After solving each 
+    # subproblem, combine them together.
+    # Divide & Conquer:
+    # 1) divde the problem as a subproblem
+    # 2) merge subproblem together
     def diffWaysToCompute(self, input):
         """
         :type input: str
